@@ -161,7 +161,20 @@ bar-volume-empty-foreground = ${colors.adapta-grey}
 format-muted-margin = ${margin.for-modules}
 format-volume-margin = ${margin.for-modules}
 
-[module/wlan]
+[module/wired-network]
+type = internal/network
+interface = enp2s0
+interval = 0.1
+format-connected = <label-connected>
+format-connected-underline = ${colors.adapta-cyan}
+format-connected-padding = 1
+label-connected = %upspeed:9% %downspeed:9%
+format-disconnected = <label-disconnected>
+format-disconnected-padding = 1
+format-disconnected-underline = ${colors.adapta-red}
+label-disconnected = 睊
+
+[module/wireless-network]
 type = internal/network
 interface = wlp2s0
 interval = 0.1
