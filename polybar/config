@@ -205,7 +205,7 @@ interval = 0.1
 format-prefix = 
 format-underline = ${colors.adapta-cyan}
 format-padding = 1
-label = %percentage_used:3%%
+label = %gb_used%/%gb_total%
 label-font = 1
 
 [module/battery]
