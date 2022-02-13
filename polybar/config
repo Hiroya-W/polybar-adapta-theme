@@ -56,6 +56,7 @@ type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
 wrapping-scroll = false
+pin-workspaces = true
 
 ws-icon-0 = 1;
 ws-icon-1 = 2;
