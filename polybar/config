@@ -35,7 +35,7 @@ cursor-click = pointer
 
 ;====Module settings======================================
 modules-left = date i3
-modules-right = pkg pkg-daemon xbacklight volume wlan cpu-graph memory battery powermenu
+modules-right = pkg pkg-daemon volume wired-network cpu-graph temperature memory powermenu
 ;==========================================================
 
 
