@@ -135,7 +135,7 @@ bar-empty-foreground = ${colors.adapta-grey}
 ;format-margin = ${margin.for-modules}
 
 [module/volume]
-type = internal/alsa
+type = internal/pulseaudio
 format-volume = <label-volume> <bar-volume>
 format-volume-underline = ${colors.adapta-cyan}
 format-volume-padding = 1
