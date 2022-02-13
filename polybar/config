@@ -261,12 +261,23 @@ animation-charging-foreground = ${colors.fg}
 animation-charging-framerate = 450
 
 [module/powermenu]
-type = custom/text
-content = 襤
-content-padding = 1
-;content-background = ${colors.shade1}
-content-underline = ${colors.adapta-cyan}
-content-foreground = ${colors.fg}
-click-left = pmenu_1
-click-right = pmenu_1
+type = custom/menu
+
+format-foreground = ${colors.fg}
+format-background = ${colors.bg}
+
+label-open = "  "
+label-close = ""
+label-close-foreground = ${colors.adapta-red}
+label-separator = " / "
+label-separator-foreground = ${colors.adapta-cyan}
+
+; reboot
+menu-0-0 = " "
+menu-0-0-exec = systemctl reboot
+menu-0-0-foreground = ${colors.fg}
+; shutdown
+menu-0-1 = "  "
+menu-0-1-exec = systemctl poweroff
+menu-0-1-foreground = ${colors.fg}
 ;==========================================================
