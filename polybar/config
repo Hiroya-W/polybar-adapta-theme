@@ -293,4 +293,19 @@ menu-0-0-foreground = ${colors.fg}
 menu-0-1 = "  "
 menu-0-1-exec = systemctl poweroff
 menu-0-1-foreground = ${colors.fg}
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+
+format = "<label><ramp>"
+label = %temperature-c%
+label-padding = 1
+format-padding = 1
+
+units = false
+ramp-0 = "糖"
+
+format-underline = ${colors.adapta-cyan}
+format-margin = ${margin.for-modules}
 ;==========================================================
