@@ -34,14 +34,23 @@ cursor-click = pointer
 
 
 ;====Module settings======================================
-modules-left = windows explorer google amazon github reddit facebook youtube workspaces-xmonad
-modules-center = date
+modules-left = date i3
 modules-right = pkg pkg-daemon xbacklight volume wlan cpu-graph memory battery powermenu
 ;==========================================================
 
 
 
 ;====Left modules==========================================
+[module/date]
+type = internal/date
+interval = 1
+format-prefix = "  "
+format-underline = ${colors.adapta-cyan}
+format-padding = 1
+label = %time%
+label-font = 1
+time = %a %d %b %Y %T
+
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
@@ -89,15 +98,6 @@ label-urgent-padding = 22
 
 
 ;====Center modules========================================
-[module/date]
-type = internal/date
-interval = 1
-format-prefix = "  "
-format-underline = ${colors.adapta-cyan}
-format-padding = 1
-label = %time%
-label-font = 1
-time = %a %d %b %Y %T
 ;==========================================================
 
 
