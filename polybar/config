@@ -37,6 +37,9 @@ cursor-click = pointer
 ;====Module settings======================================
 modules-left = date i3
 modules-right = volume wired-network cpu-graph temperature memory powermenu
+tray-position = right
+wm-restack = i3
+override-redirect = false
 ;==========================================================
 
 
