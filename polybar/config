@@ -301,7 +301,7 @@ menu-0-1-foreground = ${colors.fg}
 
 [module/temperature]
 type = internal/temperature
-thermal-zone = 0
+thermal-zone = 3
 
 format = "<label><ramp>"
 label = %temperature-c%
